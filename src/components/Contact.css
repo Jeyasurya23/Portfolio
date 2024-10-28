@@ -1,0 +1,164 @@
+.contact {
+    min-width: 85%;
+    padding: 2rem;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #007bff !important;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Light shadow */
+}
+
+/* Heading and Paragraph */
+.contact h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* Uppercase for a more defined look */
+    letter-spacing: 1px;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #ffffff !important;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Label styling */
+.contact label {
+    color: #007bff !important;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Smooth color transition on theme change */
+}
+
+/* Input and Textarea */
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #007bff !important;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: hsla(0, 0%, 100%, 0.19) !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input and Textarea Hover and Focus */
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Enhanced glow effect */
+    outline: none;
+}
+
+/* Dark theme for contact section */
+.dark-theme .contact {
+    background-color: transparent;
+    border-color: #de7d56 !important;
+    box-shadow: 0 0 10px rgba(222, 125, 86, 0.2);
+}
+
+.dark-theme .contact h2,
+.dark-theme .contact label {
+    color: #de7d56 !important;
+}
+
+.dark-theme .contact p{
+    color: #ffffff !important;
+}
+.dark-theme .contact input,
+.dark-theme .contact textarea {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-color: #de7d56 !important;
+    color: #ffffff !important;
+}
+
+.dark-theme .contact input:focus,
+.dark-theme .contact textarea:focus {
+    border-color: #de7d56;
+    box-shadow: 0 0 10px rgba(222, 125, 86, 0.5);
+}
+
+/* Submit Button Styling */
+.contact .submit-button {
+    padding: 0.75rem 2rem;
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .submit-button:hover {
+    background-color: #0056b3; /* Slightly darker blue */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Dark Theme Submit Button */
+.dark-theme .contact .submit-button {
+    background-color: #de7d56;
+}
+
+.dark-theme .contact .submit-button:hover {
+    background-color: #bf5d3c; /* Slightly darker for dark theme */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+    .contact {
+        padding: 1.5rem; /* Reduced padding for tablet */
+    }
+
+    .contact h2 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .contact p,
+    .contact label {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 0.6rem; /* Smaller padding */
+    }
+
+    .contact .submit-button {
+        padding: 0.6rem 1.5rem; /* Adjust button padding */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .contact {
+        padding: 1rem; /* Even less padding for mobile */
+    }
+
+    .contact h2 {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    .contact p,
+    .contact label {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 0.5rem; /* Smaller padding */
+    }
+
+    .contact .submit-button {
+        padding: 0.5rem 1rem; /* Adjust button padding */
+    }
+}

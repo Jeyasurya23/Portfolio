@@ -1,0 +1,86 @@
+/* Base Footer Styling */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+/* Dark Theme Styles */
+.bg-dark {
+    background: linear-gradient(90deg, #1c1c1c 0%, #343a40 100%); /* Dark background color */
+    color: #ffffff; /* White text */
+}
+
+/* Light Theme Styles */
+.bg-light {
+    background: linear-gradient(to left, #ffffff 0%, #ffffff 50%, #007bff 100%); /* Light background color */
+    color: #333; /* Dark text */
+}
+
+/* Footer Heading */
+.footer h4 {
+    font-size: 30px;
+    margin-bottom: 1rem; /* Space below heading */
+}
+
+/* Social Media Links */
+.list-inline {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* No list style */
+}
+
+/* List Items */
+.list-inline-item {
+    margin: 0 10px; /* Space between list items */
+}
+
+/* Anchor Links */
+.social-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    transition: color 0.3s ease; /* Smooth color transition */
+    font-size: 25px; /* Size of social media icons */
+}
+.bg-dark .social-link {
+    color: #007bff;
+}
+.social-link:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.bg-dark .social-link:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+    .footer h4 {
+        font-size: 24px; /* Smaller heading on tablet */
+    }
+    .list-inline-item {
+        margin: 0 8px; /* Reduced space between list items */
+    }
+    .social-link {
+        font-size: 20px; /* Smaller social media icons */
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .footer {
+        padding: 1rem 0; /* Less padding for mobile */
+    }
+    .footer h4 {
+        font-size: 20px; /* Even smaller heading on mobile */
+    }
+    .list-inline-item {
+        margin: 0 5px; /* Minimal space between list items */
+    }
+    .social-link {
+        font-size: 18px; /* Smaller social media icons */
+    }
+}

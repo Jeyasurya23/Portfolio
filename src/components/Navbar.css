@@ -1,0 +1,230 @@
+/* Light Theme Styles */
+.bg-light {
+    background-color: #f8f9fa !important;
+    color: #212529;
+    background: linear-gradient(90deg, #ffffff 0%,#ffffff 50%, #007bff 100%); /* Soft light gradient */
+
+}
+
+.navbar.bg-light {
+    background: linear-gradient(90deg, #f0f4f8 0%, #474ec8 100%); /* Elegant gradient for navbar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Dark Theme Styles */
+.bg-dark {
+    color: #ffffff;
+    background: linear-gradient(90deg, #1c1c1c 0%, #343a40 100%); /* Dark gradient */
+}
+
+.navbar.bg-dark {
+    background: linear-gradient(90deg, #696969 0%, #1c1c1c 100%); /* Rich gradient for navbar */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+section {
+    padding-top: 0px; /* Adjust this value based on your navbar height */
+    margin-top: 0px; /* Negative margin to offset the padding */
+}
+
+/* Navbar Link Styles for Light Theme */
+.navbar.bg-light .navbar-nav .nav-link {
+    color: #343a40; /* Dark text for contrast */
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.navbar.bg-light .navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light hover effect */
+    color: #ffd700; /* Accent color on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Navbar Link Styles for Dark Theme */
+.navbar.bg-dark .navbar-nav .nav-link {
+    color: #f8f9fa; /* Light text for contrast */
+    font-weight: 500; /* Slightly bolder text */
+}
+
+.navbar.bg-dark .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Dark hover effect */
+    color: #ffd700; /* Gold accent on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+.bg-dark .navbar-brand{
+    color: white;
+}
+
+.bg-dark .navbar-brand:hover{
+    color: white;
+}
+
+.bg-dark .navbar-toggler-icon{
+    background-color: white;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 0px;
+    padding-bottom: 2px;
+}
+
+.bg-light .social-icons a{
+    color: #000;
+}
+
+.social-icons a {
+    font-size: 1.8rem; /* Increased icon size */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+    color: #ffd700; /* Gold color on hover for visibility */
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: #ffffff; /* White color for dark mode */
+    font-size: 1.5rem;
+    margin-left: auto;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: scale(1.1);
+}
+.bg-light .theme-toggle-btn{
+    background: none;
+    border: none;
+    color: #1c1c1c;
+    font-size: 1.5rem;
+    margin-left: auto;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+} 
+.bg-light .theme-toggle-btn:hover {
+    color: #ffd700; /* Gold color on hover */
+    transform: scale(1.1);
+}
+/* For the dark background navbar-toggler */
+.bg-dark .navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Lighten the background on hover */
+    color: #fff; /* Change icon color to white */
+    border: 3px soild white;
+}
+
+/* For the light background navbar-toggler */
+.bg-light .navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Lighten the background on hover */
+    color: #000; /* Change icon color to black */
+}
+/* Media Queries for all devices */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar.bg-light, .navbar.bg-dark {
+        padding: 10px;
+    }
+
+    .social-icons {
+        gap: 10px;
+        font-size: 1.5rem; /* Slightly smaller icons */
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.2rem; /* Smaller toggle button */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Smaller font size for links */
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar.bg-light, .navbar.bg-dark {
+        padding: 12px;
+    }
+
+    .social-icons {
+        gap: 15px;
+        font-size: 1.6rem;
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.3rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar.bg-light, .navbar.bg-dark {
+        padding: 15px;
+    }
+
+    .social-icons {
+        gap: 18px;
+        font-size: 1.7rem;
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.4rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar.bg-light, .navbar.bg-dark {
+        padding: 18px;
+    }
+
+    .social-icons {
+        gap: 20px;
+        font-size: 1.8rem;
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar.bg-light, .navbar.bg-dark {
+        padding: 20px;
+    }
+
+    .social-icons {
+        gap: 25px;
+        font-size: 2rem; /* Larger icons */
+    }
+
+    .theme-toggle-btn {
+        font-size: 1.6rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.3rem; /* Larger font size for links */
+    }
+}
+

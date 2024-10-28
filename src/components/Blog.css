@@ -1,0 +1,120 @@
+.blogs {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #007bff !important;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Soft shadow for depth */
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Section Heading Styles */
+.blogs h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.blogs p {
+    font-size: 1rem;
+    color: #ffffff !important;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Blog Card Styling */
+.blogs .card {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.blogs .card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Card Title Styling */
+.blogs h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.blogs p.card-text {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Read More Button */
+.blogs .animated-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.blogs .animated-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Dark Theme Styling */
+.dark-theme .blogs {
+    background-color: transparent;
+    border-color: #de7d56 !important;
+    box-shadow: 0 0 10px rgba(222, 125, 86, 0.2);
+}
+
+.dark-theme .blogs h2 {
+    color: #de7d56;
+}
+
+.dark-theme .blogs h3 {
+    color: #de7d56;
+}
+
+.dark-theme .blogs p,
+.dark-theme .blogs span {
+    color: #ffffff !important;
+}
+
+.dark-theme .blogs .animated-button {
+    background-color: #de7d56;
+}
+
+.dark-theme .blogs .animated-button:hover {
+    background-color: #bf5d3c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .blogs {
+        padding: 1.5rem;
+    }
+
+    .blogs h2 {
+        font-size: 1.8rem;
+    }
+
+    .blogs h3 {
+        font-size: 1.4rem;
+    }
+
+    .blogs p {
+        font-size: 0.9rem;
+    }
+}

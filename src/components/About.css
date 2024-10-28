@@ -1,0 +1,241 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 50px 0px 0px 0px;
+    background-color: transparent; /* Fully transparent background */
+    border: 2px solid #007bff; /* Border color for light theme */
+    backdrop-filter: none; /* Remove blur for true transparency */
+    transition: border-color 0.5s, box-shadow 0.5s;
+    animation: fadeIn 1s ease-in-out, scaleUp 0.8s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Dark theme styling for .about-section */
+.dark-theme .about-section {
+    border-color: #de7d56;
+}
+
+/* Profile image and text remain as previously styled */
+
+/* Profile Image Styling */
+.profile-img {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border: 5px solid transparent; /* Default to transparent */
+    border-color: #007bff; /* Border color for light theme */
+    transition: border 0.5s ease, transform 0.5s ease;
+    animation: fadeIn 1.5s ease-in-out; /* Image appears with a fade-in effect */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Add margin between image and text */
+    box-shadow: 0px 0px 5px #007bff
+    0px 0px 25px #007bff 0px 0px 50px #007bff 0px 0px 100px #007bff;
+}
+.dark-theme .profile-img{
+    border-color: #de7d56;
+    box-shadow: 0px 0px 5px #de7d56
+    0px 0px 25px #de7d56 0px 0px 50px #de7d56
+    0px 0px 100px #de7d56;
+}
+.about-section:hover .profile-img,
+.profile-img:hover,
+.profile-img:focus,
+.profile-img:active {
+    transform: scale(1.1); /* Image enlarges on hover, focus, and active */
+    animation: pulse 1.5s infinite ease-in-out; /* Continuous pulse effect on hover and active */
+}
+
+/* Keyframes for fadeIn effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        opacity: 1; /* Fade to fully visible */
+    }
+}
+
+/* Keyframes for scale-up effect */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8); /* Start slightly smaller */
+    }
+    to {
+        transform: scale(1); /* Scale to normal size */
+    }
+}
+
+/* Keyframes for infinite pulse effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.05); /* Slightly larger */
+    }
+}
+
+/* Keyframes for typewriter effect */
+@keyframes typewriter {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* Expand to full width */
+    }
+}
+
+/* Keyframes for blinking cursor (during typing) */
+@keyframes blink {
+    0%, 100% {
+        border-right-color: transparent; /* Hide the cursor */
+    }
+    50% {
+        border-right-color: black; /* Show the cursor */
+    }
+}
+
+/* Text Styling */
+.about-name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    transition: color 0.5s;
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Add margin between name and title */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect on text */
+}
+
+.dark-theme .about-name {
+    color: #ffffff; /* White text in dark theme */
+}
+
+.about-title {
+    color: rgb(0, 157, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Add space between elements */
+    overflow: hidden; /* Ensure overflow is hidden for the typewriter effect */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: 3px solid white; /* Cursor effect */
+    width: 0; /* Start width for typewriter effect */
+    animation: typewriter 4s steps(30, end) forwards; /* Apply typewriter effect */
+    animation-delay: 0.5s; /* Delay before typewriter starts */
+}
+
+.about-title.finished {
+    border-right: none; /* Remove cursor once typing finishes */
+}
+
+.dark-theme .about-title {
+    color: white; /* Ensure text is white in dark theme */
+}
+
+.about-description {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Add space between elements */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect on text */
+}
+
+.dark-theme .about-description {
+    color: white; /* Ensure text is white in dark theme */
+}
+
+/* Button Styling */
+.about-btn {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    padding: 10px 20px; /* Added padding for better button appearance */
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners for the button */
+    text-align: center; /* Center text inside button */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect on buttons */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.about-btn:hover,
+.about-btn:focus,
+.about-btn:active {
+    background-color: #ffffff !important;
+    color: #0056b3 !important;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgb(23,67,201)
+}
+
+.dark-theme .about-btn {
+    background-color: #de7d56; /* Button color for dark theme */
+    color: #ffffff ; /* Text color for dark theme */
+    border: 1px solid #de7d56 !important;
+}
+
+.dark-theme .about-btn:hover,
+.dark-theme .about-btn:focus,
+.dark-theme .about-btn:active {
+    background-color: #f0f0f0; /* Hover color for dark theme */
+    color: #e65e28 !important; /* Text color on hover in dark theme */
+    box-shadow: 10px 10px 10px rgb(206, 73, 20) !important; /* Shadow for hover effect */
+}
+
+/* Hover Animations for All Devices */
+.about-section:focus-within .profile-img,
+.about-section:active .profile-img,
+.about-section:focus-within .about-btn,
+.about-section:active .about-btn {
+    transform: scale(1.1); /* Apply the same hover effects for touch/active events */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .profile-img {
+        width: 400px; /* Smaller size for larger tablets */
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 250px; /* Smaller size for tablets and phones */
+        height: 250px;
+    }
+
+    .about-name {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .about-description {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .about-section {
+        height: auto; /* Allow section height to be auto on smaller screens */
+        padding: 20px; /* Add some padding for mobile view */
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-img {
+        width: 150px; /* Even smaller size for small phones */
+        height: 150px;
+    }
+
+    .about-name {
+        font-size: 1.8rem; /* Adjust font size for smaller devices */
+    }
+
+    .about-description {
+        font-size: 0.9rem; /* Further reduce font size */
+    }
+
+    .about-section {
+        padding: 15px; /* More compact padding */
+    }
+}

@@ -1,0 +1,164 @@
+/* Skills Section Styling */
+.skills {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #007bff; /* This is the outer border */
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.skills p {
+    font-size: 1rem;
+    color: #ffffff !important;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.dark-theme .skills {
+    background-color: transparent; /* Transparent background */
+    border-color: #de7d56;
+}
+
+.dark-theme .skills h2 {
+    color: #de7d56;
+}
+
+.dark-theme .skills p {
+    color: #ffffff !important;
+}
+
+/* Card Styling */
+.card {
+    border: none; /* No border for cards */
+    background-color: hsla(0, 0%, 100%, 0.19) !important; /* Semi-transparent background for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Pulse Animation Keyframes */
+@keyframes pulseEffect {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Applying Infinite Pulse Animation on Hover */
+.col-md-4.mb-4:hover {
+    animation: pulseEffect 1.8s ease-in-out infinite;
+}
+.col-md-4.mb-4 {
+    margin-top: 50px;
+}
+
+/* Card Title Styling */
+
+.card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.dark-theme .card-title {
+    color: #de7d56;
+}
+
+/* Skill List Styling */
+.list-unstyled {
+    padding-left: 0;
+    margin: 0px;
+    list-style: none;
+}
+
+.list-unstyled li {
+    font-size: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
+}
+
+.dark-theme .list-unstyled li {
+    color: #ccc;
+}
+
+.skill-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.list-unstyled li:hover .skill-icon {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .skills {
+        padding: 1rem;
+    }
+
+    .skills h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .list-unstyled li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .skills {
+        padding: 1.5rem;
+    }
+
+    .skills h2 {
+        font-size: 1.75rem;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .list-unstyled li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Desktops */
+@media (min-width: 769px) {
+    .skills {
+        padding: 2rem;
+    }
+
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .list-unstyled li {
+        font-size: 1rem;
+    }
+}
