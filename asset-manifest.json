@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8b855ecb.css",
-    "main.js": "/Portfolio/static/js/main.faaea036.js",
-    "static/media/cafe.png": "/Portfolio/static/media/cafe.549707aa1f9d243dfa05.png",
+    "main.js": "/Portfolio/static/js/main.c0db5a2f.js",
     "static/media/weather.png": "/Portfolio/static/media/weather.21946f393b8b41bc473c.png",
     "static/media/white.webp": "/Portfolio/static/media/white.7fe87cf3830db1d658fe.webp",
     "static/media/e-com.png": "/Portfolio/static/media/e-com.f8bf5685aeda8035f366.png",
     "static/media/black.webp": "/Portfolio/static/media/black.da4e0cc1a284c1870bf3.webp",
     "static/media/Profile.png": "/Portfolio/static/media/Profile.7a3bec4141b71c7a0c65.png",
+    "static/media/cafe.jpg": "/Portfolio/static/media/cafe.463abc38a98801f24de0.jpg",
+    "static/media/to-do.png": "/Portfolio/static/media/to-do.9923a612a3a68c13885b.png",
+    "static/media/rbac.png": "/Portfolio/static/media/rbac.0cadbafbfb0aba47286c.png",
     "static/media/Jeyasurya-CV.pdf": "/Portfolio/static/media/Jeyasurya-CV.99a3866c5be72a89f874.pdf",
-    "static/media/rbac.png": "/Portfolio/static/media/rbac.ce14bbc8e76972f31af1.png",
-    "static/media/to-do.png": "/Portfolio/static/media/to-do.bf67ebc9a38a6197d810.png",
     "index.html": "/Portfolio/index.html",
     "main.8b855ecb.css.map": "/Portfolio/static/css/main.8b855ecb.css.map",
-    "main.faaea036.js.map": "/Portfolio/static/js/main.faaea036.js.map"
+    "main.c0db5a2f.js.map": "/Portfolio/static/js/main.c0db5a2f.js.map"
   },
   "entrypoints": [
     "static/css/main.8b855ecb.css",
-    "static/js/main.faaea036.js"
+    "static/js/main.c0db5a2f.js"
   ]
 }
