@@ -1,0 +1,237 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 50px 0px 0px 0px;
+    background-color: transparent; 
+    border: 2px solid #007bff; 
+    backdrop-filter: none; 
+    transition: border-color 0.5s, box-shadow 0.5s;
+    animation: fadeIn 1s ease-in-out, scaleUp 0.8s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+}
+
+.about-section:hover {
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.25);
+}
+
+.dark-theme .about-section {
+    border-color: #ff0000;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.15);
+}
+
+.dark-theme .about-section:hover {
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.25);
+}
+
+.profile-img {
+    width: 300px; 
+    height: 300px; 
+    border: 5px solid transparent; 
+    border-color: #007bff;
+    transition: border 0.5s ease, transform 0.5s ease;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-bottom: 20px; 
+}
+.dark-theme .profile-img{
+    border-color: #ff0000;
+    box-shadow: 0px 0px 5px #ff0000
+    0px 0px 25px #ff0000 0px 0px 50px #ff0000
+    0px 0px 100px #ff0000;
+}
+.about-section:hover .profile-img,
+.profile-img:hover,
+.profile-img:focus,
+.profile-img:active {
+    transform: scale(1.1); 
+    animation: pulses 1.5s infinite ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulses {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-right-color: transparent;
+    }
+    50% {
+        border-right-color: black;
+    }
+}
+
+.about-name {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #007bff;
+    transition: color 0.5s;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.dark-theme .about-name {
+    color: #ff0000;
+}
+
+.about-title {
+    color:#000000;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typewriter 4s steps(30, end) forwards;
+    animation-delay: 0.5s;
+}
+
+.about-title.finished {
+    border-right: none;
+}
+
+.dark-theme .about-title {
+    color: white;
+}
+
+.about-description {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.dark-theme .about-description {
+    color: white;
+}
+
+.about-btn {
+    background-color: #007bff !important;
+    color: white !important;
+    font-size: 1.25rem !important;
+    padding: 0.75rem 1.5rem !important;
+    border: 2px solid transparent !important;
+    border-radius: 30px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+.about-btn:hover {
+    background-color: #fff !important;
+    color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.about-btn:focus {
+    outline: none !important;
+}
+
+.about-btn:active {
+    background-color: #004085 !important;
+    color: #ffffff !important;
+    transform: translateY(2px) !important;
+}
+
+.dark-theme .about-btn {
+    background-color: #ff0000 !important;
+    color: white !important;
+}
+
+.dark-theme .about-btn:hover {
+    background-color: #fff !important;
+    color: #ff0000 !important;
+    border-color: #ff0000 !important;
+}
+
+.dark-theme .about-btn:active {
+    background-color: #b30000 !important;
+}
+
+@media (max-width: 1200px) {
+    .profile-img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-name {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-name {
+        font-size: 1.8rem;
+    }
+
+    .about-description {
+        font-size: 0.9rem;
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+}

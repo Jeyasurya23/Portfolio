@@ -1,0 +1,130 @@
+.certificates {
+    max-width: 1145px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #007bff !important;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.dark-theme .certificates {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 10px rgba(222, 125, 86, 0.2);
+}
+.title {
+    font-size: 2rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.dark-theme .title {
+    color: #ff0000 !important;
+}
+
+.sub {
+    font-size: 1rem;
+    color: #000000 !important;
+    font-weight: 900;
+}
+.dark-theme .sub {
+    color: #ffffff !important;
+}
+.certificate-card {
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.organization {
+    font-size: 1rem;
+    color: #000000 !important;
+    margin-bottom: 0.3rem;
+}
+
+.dark-theme .organization {
+    color: #ffffff !important;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+.dark-theme .date {
+    color: #ffffff !important;
+}
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+.dark-theme .card-text {
+    color: #ffffff !important;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.certificate-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: 80%;
+}
+
+.certificate-btn:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .card-title {
+        font-size: 1.1rem;
+    }
+    
+    .organization {
+        font-size: 0.9rem;
+    }
+    
+    .certificate-img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .certificate-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificate-img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .certificate-img {
+        height: 200px;
+    }
+}
