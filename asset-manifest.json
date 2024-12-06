@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.59d0ab1d.css",
-    "main.js": "/Portfolio/static/js/main.be5d1c3f.js",
+    "main.js": "/Portfolio/static/js/main.4dda0492.js",
     "static/media/fullstack.png": "/Portfolio/static/media/fullstack.a686216d655d846a2679.png",
     "static/media/javascript.png": "/Portfolio/static/media/javascript.d8a4f2454ebdb8d8ae20.png",
     "static/media/python.png": "/Portfolio/static/media/python.6adf21bc0f6a99ca491c.png",
@@ -13,15 +13,16 @@
     "static/media/cafe.jpg": "/Portfolio/static/media/cafe.463abc38a98801f24de0.jpg",
     "static/media/ibm.png": "/Portfolio/static/media/ibm.d901f59c92a2392b847a.png",
     "static/media/to-do.png": "/Portfolio/static/media/to-do.9923a612a3a68c13885b.png",
+    "static/media/prompt.jpg": "/Portfolio/static/media/prompt.bf08516cc82a017b9e19.jpg",
     "static/media/gift.jpg": "/Portfolio/static/media/gift.32fc88b411f781f19931.jpg",
     "static/media/rbac.png": "/Portfolio/static/media/rbac.0cadbafbfb0aba47286c.png",
     "static/media/Jeyasurya-CV.pdf": "/Portfolio/static/media/Jeyasurya-CV.99a3866c5be72a89f874.pdf",
     "index.html": "/Portfolio/index.html",
     "main.59d0ab1d.css.map": "/Portfolio/static/css/main.59d0ab1d.css.map",
-    "main.be5d1c3f.js.map": "/Portfolio/static/js/main.be5d1c3f.js.map"
+    "main.4dda0492.js.map": "/Portfolio/static/js/main.4dda0492.js.map"
   },
   "entrypoints": [
     "static/css/main.59d0ab1d.css",
-    "static/js/main.be5d1c3f.js"
+    "static/js/main.4dda0492.js"
   ]
 }
