@@ -41,7 +41,7 @@ const certificates = [
     },
     {
         title: "Prompt Engineering for ChatGPT",
-        organization: "IBM Developer Skills Network",
+        organization: "Great Learning Academy",
         date: "December 2024",
         description: "The Prompt Engineering for ChatGPT certification from IBM Developer Skills Network recognizes expertise in prompt engineering for ChatGPT. It covers prompt engineering techniques, best practices, and practical applications. It emphasizes practical projects, enabling proficiency in prompt engineering and problem-solving skills.",
         credentialLink: "https://www.mygreatlearning.com/certificate/DOCIZJJO",
