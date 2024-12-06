@@ -4,6 +4,7 @@ import fullstack from './assets/certificate/fullstack.png';
 import javascript from './assets/certificate/javascript.png';
 import python from './assets/certificate/python.png';
 import ibm from './assets/certificate/ibm.png';
+import prompt from './assets/certificate/prompt.jpg';
 
 const certificates = [
     {
@@ -38,6 +39,14 @@ const certificates = [
         credentialLink: "https://courses.tnsdc.skillsnetwork.site/certificates/56601c9d86b84d67a68ef51d05014883",
         imgSrc: ibm,
     },
+    {
+        title: "Prompt Engineering for ChatGPT",
+        organization: "IBM Developer Skills Network",
+        date: "December 2024",
+        description: "The Prompt Engineering for ChatGPT certification from IBM Developer Skills Network recognizes expertise in prompt engineering for ChatGPT. It covers prompt engineering techniques, best practices, and practical applications. It emphasizes practical projects, enabling proficiency in prompt engineering and problem-solving skills.",
+        credentialLink: "https://www.mygreatlearning.com/certificate/DOCIZJJO",
+        imgSrc: prompt,
+    }
 ];
 
 const Certificate = () => {
